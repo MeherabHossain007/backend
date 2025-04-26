@@ -56,6 +56,22 @@ export interface SectionsFeatureGrid extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsFeatureSlider extends Struct.ComponentSchema {
+  collectionName: 'components_sections_feature_sliders';
+  info: {
+    description: '';
+    displayName: 'feature-slider';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    slides: Schema.Attribute.Component<'sections.slides', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsFeatures extends Struct.ComponentSchema {
   collectionName: 'components_sections_features';
   info: {
@@ -73,6 +89,20 @@ export interface SectionsHero extends Struct.ComponentSchema {
   info: {
     description: '';
     displayName: 'hero';
+  };
+  attributes: {
+    buttonLink: Schema.Attribute.String;
+    buttonText: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsSlides extends Struct.ComponentSchema {
+  collectionName: 'components_sections_slides';
+  info: {
+    displayName: 'slides';
   };
   attributes: {
     buttonLink: Schema.Attribute.String;
@@ -159,8 +189,10 @@ declare module '@strapi/strapi' {
       'sections.button': SectionsButton;
       'sections.call-to-action': SectionsCallToAction;
       'sections.feature-grid': SectionsFeatureGrid;
+      'sections.feature-slider': SectionsFeatureSlider;
       'sections.features': SectionsFeatures;
       'sections.hero': SectionsHero;
+      'sections.slides': SectionsSlides;
       'sections.testimonials': SectionsTestimonials;
       'sections.testimonials-items': SectionsTestimonialsItems;
       'sections.text-image': SectionsTextImage;

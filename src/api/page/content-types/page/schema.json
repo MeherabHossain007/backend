@@ -75,7 +75,8 @@
         "sections.feature-grid",
         "sections.testimonials",
         "sections.call-to-action",
-        "sections.ticker"
+        "sections.ticker",
+        "sections.feature-slider"
       ],
       "pluginOptions": {
         "i18n": {

@@ -459,6 +459,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections.testimonials',
         'sections.call-to-action',
         'sections.ticker',
+        'sections.feature-slider',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{
