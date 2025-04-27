@@ -44,6 +44,45 @@ export interface SectionsCallToAction extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsCareerHero extends Struct.ComponentSchema {
+  collectionName: 'components_sections_career_heroes';
+  info: {
+    displayName: 'career-hero';
+  };
+  attributes: {
+    buttonLink: Schema.Attribute.String;
+    buttonText: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsCareerHighlights extends Struct.ComponentSchema {
+  collectionName: 'components_sections_career_highlights';
+  info: {
+    description: '';
+    displayName: 'career-highlights';
+  };
+  attributes: {
+    highlights: Schema.Attribute.Component<'sections.highlights', true>;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsCareerJobListings extends Struct.ComponentSchema {
+  collectionName: 'components_sections_career_job_listings';
+  info: {
+    displayName: 'career-job-listings';
+  };
+  attributes: {
+    positions: Schema.Attribute.Component<'sections.job-position', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsFeatureGrid extends Struct.ComponentSchema {
   collectionName: 'components_sections_feature_grids';
   info: {
@@ -95,6 +134,36 @@ export interface SectionsHero extends Struct.ComponentSchema {
     buttonText: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsHighlights extends Struct.ComponentSchema {
+  collectionName: 'components_sections_highlights';
+  info: {
+    description: '';
+    displayName: 'highlights';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    linkText: Schema.Attribute.String;
+    linkUrl: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SectionsJobPosition extends Struct.ComponentSchema {
+  collectionName: 'components_sections_job_positions';
+  info: {
+    displayName: 'JobPosition';
+  };
+  attributes: {
+    applicationUrl: Schema.Attribute.String;
+    department: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    loaction: Schema.Attribute.String;
+    requirements: Schema.Attribute.Blocks;
     title: Schema.Attribute.String;
   };
 }
@@ -188,10 +257,15 @@ declare module '@strapi/strapi' {
       'global.footer-links': GlobalFooterLinks;
       'sections.button': SectionsButton;
       'sections.call-to-action': SectionsCallToAction;
+      'sections.career-hero': SectionsCareerHero;
+      'sections.career-highlights': SectionsCareerHighlights;
+      'sections.career-job-listings': SectionsCareerJobListings;
       'sections.feature-grid': SectionsFeatureGrid;
       'sections.feature-slider': SectionsFeatureSlider;
       'sections.features': SectionsFeatures;
       'sections.hero': SectionsHero;
+      'sections.highlights': SectionsHighlights;
+      'sections.job-position': SectionsJobPosition;
       'sections.slides': SectionsSlides;
       'sections.testimonials': SectionsTestimonials;
       'sections.testimonials-items': SectionsTestimonialsItems;

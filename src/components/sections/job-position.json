@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_job_positions",
+  "info": {
+    "displayName": "JobPosition"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "loaction": {
+      "type": "string"
+    },
+    "requirements": {
+      "type": "blocks"
+    },
+    "applicationUrl": {
+      "type": "string"
+    }
+  }
+}

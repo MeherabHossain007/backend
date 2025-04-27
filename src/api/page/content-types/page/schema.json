@@ -76,7 +76,10 @@
         "sections.testimonials",
         "sections.call-to-action",
         "sections.ticker",
-        "sections.feature-slider"
+        "sections.feature-slider",
+        "sections.career-job-listings",
+        "sections.career-highlights",
+        "sections.career-hero"
       ],
       "pluginOptions": {
         "i18n": {

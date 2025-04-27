@@ -460,6 +460,9 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections.call-to-action',
         'sections.ticker',
         'sections.feature-slider',
+        'sections.career-job-listings',
+        'sections.career-highlights',
+        'sections.career-hero',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{
