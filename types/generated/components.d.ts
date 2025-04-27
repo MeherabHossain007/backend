@@ -111,6 +111,20 @@ export interface SectionsFeatureSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsFeatureSpotlight extends Struct.ComponentSchema {
+  collectionName: 'components_sections_feature_spotlights';
+  info: {
+    displayName: 'feature-spotlight';
+  };
+  attributes: {
+    buttonLink: Schema.Attribute.String;
+    buttonText: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsFeatures extends Struct.ComponentSchema {
   collectionName: 'components_sections_features';
   info: {
@@ -132,6 +146,7 @@ export interface SectionsHero extends Struct.ComponentSchema {
   attributes: {
     buttonLink: Schema.Attribute.String;
     buttonText: Schema.Attribute.String;
+    checkText: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
@@ -262,6 +277,7 @@ declare module '@strapi/strapi' {
       'sections.career-job-listings': SectionsCareerJobListings;
       'sections.feature-grid': SectionsFeatureGrid;
       'sections.feature-slider': SectionsFeatureSlider;
+      'sections.feature-spotlight': SectionsFeatureSpotlight;
       'sections.features': SectionsFeatures;
       'sections.hero': SectionsHero;
       'sections.highlights': SectionsHighlights;

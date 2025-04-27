@@ -28,6 +28,9 @@
     },
     "buttonLink": {
       "type": "string"
+    },
+    "checkText": {
+      "type": "string"
     }
   }
 }

@@ -79,7 +79,8 @@
         "sections.feature-slider",
         "sections.career-job-listings",
         "sections.career-highlights",
-        "sections.career-hero"
+        "sections.career-hero",
+        "sections.feature-spotlight"
       ],
       "pluginOptions": {
         "i18n": {
