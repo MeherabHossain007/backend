@@ -28,6 +28,6 @@ USER node
 # Ensure production mode
 ENV NODE_ENV=production
 # Expose Strapi default port
-EXPOSE 1337
+EXPOSE 10000
 # Start Strapi in production mode
-CMD ["strapi", "start"]
+CMD ["npm", "run", "start"]
