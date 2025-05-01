@@ -74,6 +74,7 @@ export interface SectionsCareerHighlights extends Struct.ComponentSchema {
 export interface SectionsCareerJobListings extends Struct.ComponentSchema {
   collectionName: 'components_sections_career_job_listings';
   info: {
+    description: '';
     displayName: 'career-job-listings';
   };
   attributes: {
@@ -171,13 +172,14 @@ export interface SectionsHighlights extends Struct.ComponentSchema {
 export interface SectionsJobPosition extends Struct.ComponentSchema {
   collectionName: 'components_sections_job_positions';
   info: {
+    description: '';
     displayName: 'JobPosition';
   };
   attributes: {
     applicationUrl: Schema.Attribute.String;
     department: Schema.Attribute.String;
     description: Schema.Attribute.Text;
-    loaction: Schema.Attribute.String;
+    location: Schema.Attribute.String;
     requirements: Schema.Attribute.Blocks;
     title: Schema.Attribute.String;
   };

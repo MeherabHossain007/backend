@@ -1,7 +1,8 @@
 {
   "collectionName": "components_sections_career_job_listings",
   "info": {
-    "displayName": "career-job-listings"
+    "displayName": "career-job-listings",
+    "description": ""
   },
   "options": {},
   "attributes": {
