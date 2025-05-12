@@ -3,7 +3,7 @@ services:
     name: isrbackend
     env: docker
     dockerfilePath: ./Dockerfile
-    plan: starter
+    plan: free
     region: oregon
     buildCommand: npm install && npm build
     healthCheckPath: /_health
