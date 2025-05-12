@@ -31,4 +31,4 @@ services:
 
 databases:
   - name: isrbackend
-    plan: starter
+    plan: free
