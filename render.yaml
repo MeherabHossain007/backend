@@ -2,7 +2,7 @@ services:
   - type: web
     name: isrbackend
     env: docker
-    dockerfilePath: ./Dockerfile.prod
+    dockerfilePath: ./Dockerfile
     plan: starter
     region: oregon
     buildCommand: yarn install && yarn build
