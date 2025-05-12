@@ -5,12 +5,9 @@ services:
     dockerfilePath: ./Dockerfile
     plan: free
     region: oregon
-    buildCommand: npm install && npm build
+    buildCommand: yarn install && yarn build
+    # Removed startCommand - this should be defined in your Dockerfile
     healthCheckPath: /_health
-    disk:
-      name: isrbackend-uploads
-      mountPath: /opt/render/project/src/public/uploads
-      sizeGB: 1
     envVars:
       - key: NODE_VERSION
         value: 22.9
