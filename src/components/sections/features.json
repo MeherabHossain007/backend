@@ -1,25 +1,27 @@
 {
   "collectionName": "components_sections_features",
   "info": {
-    "displayName": "features"
+    "displayName": "features",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
-    },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "description": {
+      "type": "blocks"
     }
   }
 }

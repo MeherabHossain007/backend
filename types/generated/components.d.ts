@@ -87,6 +87,7 @@ export interface SectionsCareerJobListings extends Struct.ComponentSchema {
 export interface SectionsFeatureGrid extends Struct.ComponentSchema {
   collectionName: 'components_sections_feature_grids';
   info: {
+    description: '';
     displayName: 'feature-grid';
   };
   attributes: {
@@ -129,10 +130,11 @@ export interface SectionsFeatureSpotlight extends Struct.ComponentSchema {
 export interface SectionsFeatures extends Struct.ComponentSchema {
   collectionName: 'components_sections_features';
   info: {
+    description: '';
     displayName: 'features';
   };
   attributes: {
-    description: Schema.Attribute.Text;
+    description: Schema.Attribute.Blocks;
     icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Schema.Attribute.String;
   };
