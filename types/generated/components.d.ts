@@ -116,12 +116,11 @@ export interface SectionsFeatureSlider extends Struct.ComponentSchema {
 export interface SectionsFeatureSpotlight extends Struct.ComponentSchema {
   collectionName: 'components_sections_feature_spotlights';
   info: {
+    description: '';
     displayName: 'feature-spotlight';
   };
   attributes: {
-    buttonLink: Schema.Attribute.String;
-    buttonText: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    features: Schema.Attribute.Component<'sections.features', true>;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -134,6 +133,7 @@ export interface SectionsFeatures extends Struct.ComponentSchema {
     displayName: 'features';
   };
   attributes: {
+    button: Schema.Attribute.Component<'sections.button', false>;
     description: Schema.Attribute.Blocks;
     icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Schema.Attribute.String;

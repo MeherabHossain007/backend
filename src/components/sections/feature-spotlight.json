@@ -1,7 +1,8 @@
 {
   "collectionName": "components_sections_feature_spotlights",
   "info": {
-    "displayName": "feature-spotlight"
+    "displayName": "feature-spotlight",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,21 +12,10 @@
     "subtitle": {
       "type": "string"
     },
-    "buttonText": {
-      "type": "string"
-    },
-    "buttonLink": {
-      "type": "string"
-    },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.features"
     }
   }
 }

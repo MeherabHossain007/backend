@@ -22,6 +22,11 @@
     },
     "description": {
       "type": "blocks"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.button"
     }
   }
 }
