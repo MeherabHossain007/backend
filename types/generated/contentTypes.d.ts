@@ -464,6 +464,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections.career-highlights',
         'sections.career-hero',
         'sections.feature-spotlight',
+        'sections.career-vision',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{

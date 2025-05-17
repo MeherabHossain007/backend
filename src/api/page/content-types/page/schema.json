@@ -80,7 +80,8 @@
         "sections.career-job-listings",
         "sections.career-highlights",
         "sections.career-hero",
-        "sections.feature-spotlight"
+        "sections.feature-spotlight",
+        "sections.career-vision"
       ],
       "pluginOptions": {
         "i18n": {
