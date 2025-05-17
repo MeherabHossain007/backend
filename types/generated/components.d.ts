@@ -84,6 +84,16 @@ export interface SectionsCareerJobListings extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsCareerVision extends Struct.ComponentSchema {
+  collectionName: 'components_sections_career_visions';
+  info: {
+    displayName: 'career-vision';
+  };
+  attributes: {
+    richText: Schema.Attribute.Blocks;
+  };
+}
+
 export interface SectionsFeatureGrid extends Struct.ComponentSchema {
   collectionName: 'components_sections_feature_grids';
   info: {
@@ -279,6 +289,7 @@ declare module '@strapi/strapi' {
       'sections.career-hero': SectionsCareerHero;
       'sections.career-highlights': SectionsCareerHighlights;
       'sections.career-job-listings': SectionsCareerJobListings;
+      'sections.career-vision': SectionsCareerVision;
       'sections.feature-grid': SectionsFeatureGrid;
       'sections.feature-slider': SectionsFeatureSlider;
       'sections.feature-spotlight': SectionsFeatureSpotlight;
